@@ -1,0 +1,71 @@
+[window]
+
+opacity = 0.82
+
+padding.x = 10
+padding.y = 10
+
+
+decorations = "Full"
+decorations_theme_variant = "Light" # "Dark"
+
+[font]
+
+size = 10
+[font.normal]
+# family = "MonacoLigaturized Nerd Font"
+# family = "IosevkaTree Nerd Font SemiBold Extended Obl"
+family = "IosevkaTree Nerd Font"
+style = "semiBold"
+
+[colors.primary]
+background = "#000000"
+foreground = "#FFFFFF"
+
+# Colors and stuff
+
+# [colors.normal]
+# black = "#1a1a1a"
+# red = "#f4005f"
+# green = "#98e024"
+# yellow = "#fa8419"
+# blue = "#9d65ff"
+# magenta = "#f4005f"
+# cyan = "#58d1eb"
+# white = "#c4c5b5"
+#
+# [colors.bright]
+# black = "#625e4c"
+# red = "#f4005f"
+# green = "#98e024"
+# yellow = "#e0d561"
+# blue = "#9d65ff"
+# magenta = "#f4005f"
+# cyan = "#58d1eb"
+# white = "#f6f6ef"
+  # Tokyo Night theme, based on both:
+  #   https://github.com/ghifarit53/tokyonight-vim
+  #   https://github.com/enkia/tokyo-night-vscode-theme
+    # Default colors
+    # Normal colors
+    [colors.normal]
+      black =   '#32344a'
+      red =     '#f7768e'
+      green =   '#9ece6a'
+      yellow =  '#e0af68'
+      blue =    '#7aa2f7'
+      magenta = '#ad8ee6'
+      cyan =    '#449dab'
+      white =   '#787c99'
+
+    # Bright colors
+    [colors.bright]
+      black =   '#444b6a'
+      red =     '#ff7a93'
+      green =   '#b9f27c'
+      yellow =  '#ff9e64'
+      blue =    '#7da6ff'
+      magenta = '#bb9af7'
+      cyan =    '#0db9d7'
+      white =   '#acb0d0'
+
