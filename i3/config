@@ -4,9 +4,11 @@ set $alt Mod1
 set $mod Mod4
 
 # autostart
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/Dark_Nature.png
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/Relaxed_Mario.png
 exec --no-startup-id picom -f
 exec --no-startup-id nm-applet
+exec --no-startup-id /usr/lib/gsd-xsettings
+exec --no-startup-id  xinput set-prop 10 'libinput Tapping Enabled' 1
 
 # set font
 # font pango:JetBrains Mono 12
@@ -26,17 +28,16 @@ bindsym $mod+d exec i3-dmenu-desktop --dmenu="dmenu -i -b \
 
 # common apps keybinds
 bindsym Print exec scrot 'Cheese_%a-%d%b%y_%H.%M.png' -e 'xdg-open ~/$f'
-bindsym $mod+l exec i3lock -i ~/.lock.png
 bindsym $mod+f exec firefox
-bindsym $mod+e exec i3lock
+bindsym $mod+e exec i3lock -i ~/Pictures/Wallpapers/Relaxed_Mario.png
 bindsym $mod+p exec rofi -show drun
 
 # change volume and brightness
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
 bindsym XF86AudioMute exec amixer set Master toggle
-bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec sudo brightnessctl set 5%+
+bindsym XF86MonBrightnessDown exec sudo brightnessctl set 5%-
 
 # kill focused window
 bindsym $mod+q kill
